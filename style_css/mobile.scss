@@ -16,11 +16,10 @@ body{
 /* Section heander logo du site*/
 header{
     background-color: #ffffff;
-    box-shadow: 5px 5px 5px rgb(56, 56, 56);
-    border-bottom: 2px solid rgb(207, 207, 207);
+    box-shadow: rgb(216, 216, 216) 0px 5px 5px 0px;
     width: 100%;
     height: auto;
-
+    position: relative;
         @include FlexCenter;
 }
         header img{
@@ -34,11 +33,19 @@ header{
   
 
 /*box1 = section localisation*/
+
 .box1{
     background-color:#EAEAEA;
-
-        @include FlexCenter;
+    padding: 0px;
+    margin-top: 0px;
+    text-align: center;
+    height: 40px;
+    @include FlexCenter;
 }
+    
+    .box1 i{
+        color: #353535;
+    }
     .box1 p{
     color: black;
     }
@@ -73,6 +80,7 @@ header{
         padding: 15px;
         border-radius: 30px;
         width: 60%;
+        box-shadow: rgb(170, 170, 170) 0px 5px 5px 0px;
         background-image: linear-gradient(to top, rgb(147, 86, 220, ),rgb(255, 122, 217));
     }
 /*box3 = Section fontion, contien toutes les 3 fonction du site*/

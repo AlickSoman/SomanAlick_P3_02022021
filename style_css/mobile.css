@@ -8,11 +8,11 @@ body {
 /* Section heander logo du site*/
 header {
   background-color: #ffffff;
-  -webkit-box-shadow: 5px 5px 5px #383838;
-          box-shadow: 5px 5px 5px #383838;
-  border-bottom: 2px solid #cfcfcf;
+  -webkit-box-shadow: #d8d8d8 0px 5px 5px 0px;
+          box-shadow: #d8d8d8 0px 5px 5px 0px;
   width: 100%;
   height: auto;
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -40,6 +40,10 @@ header img {
 /*box1 = section localisation*/
 .box1 {
   background-color: #EAEAEA;
+  padding: 0px;
+  margin-top: 0px;
+  text-align: center;
+  height: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -54,6 +58,10 @@ header img {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
+}
+
+.box1 i {
+  color: #353535;
 }
 
 .box1 p {
@@ -100,6 +108,8 @@ header img {
   padding: 15px;
   border-radius: 30px;
   width: 60%;
+  -webkit-box-shadow: #aaaaaa 0px 5px 5px 0px;
+          box-shadow: #aaaaaa 0px 5px 5px 0px;
   background-image: -webkit-gradient(linear, left bottom, left top, from(#9356dc), to(#ff7ad9));
   background-image: linear-gradient(to top, #9356dc, #ff7ad9);
 }
