@@ -1,0 +1,105 @@
+@mixin FlexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+/*Body ----------------------------------------*/
+body{
+    padding: 0%;
+    margin: 0%;
+    font-family: shrikhant, roboto;
+}
+/* Section heander logo du site*/
+header{
+    background-color: #ffffff;
+    box-shadow: 5px 5px 5px rgb(56, 56, 56);
+    border-bottom: 2px solid rgb(207, 207, 207);
+    width: 100%;
+    height: auto;
+
+        @include FlexCenter;
+}
+        header img{
+        width: 50%;
+        padding-top: 20px;
+        padding-bottom:10px ;
+        margin-left:0px ;
+        font-weight: 700
+
+        }    
+  
+
+/*box1 = section localisation*/
+.box1{
+    background-color:#EAEAEA;
+
+        @include FlexCenter;
+}
+    .box1 p{
+    color: black;
+    }
+
+
+/*box2 = section explorer, contien le bouton Explorer nos restaurants*/
+.box2{
+    background-color: #F6F6F6;
+    height: 50vh;
+    padding-top: 0px;
+        @include FlexCenter;
+}
+    
+    .box2 h1{
+        color: black;
+        padding-bottom: 0px;
+        margin: 0px;
+        font-size: 140%;
+        width: 70%;
+    }
+
+    .box2 p{
+        color: black;
+        padding: 0px;
+        
+    }
+
+    .box2 #bouton-explorer{
+        
+        text-decoration: none;
+        color: #ffffff;
+        padding: 15px;
+        border-radius: 30px;
+        width: 60%;
+        background-image: linear-gradient(to top, rgb(147, 86, 220, ),rgb(255, 122, 217));
+    }
+/*box3 = Section fontion, contien toutes les 3 fonction du site*/
+.box3{
+    background-color: #ffffff;
+        
+        @include FlexCenter;
+}
+
+
+/*box4 section plats; ils contiens les differents plats*/
+
+
+/*ci-desous le footer du site----------------------------*/
+footer{
+    background-color: #353535;
+    padding: 20px;
+}
+
+    footer img{
+        width: 40%;
+        padding: 0px;
+        margin-left:0px ;
+        font-weight: 700;
+        
+
+        }
+    p{
+        color: rgb(255, 255, 255);
+    }
