@@ -154,6 +154,117 @@ header img {
 }
 
 /*box4 section plats; ils contiens les differents plats*/
+.box4 {
+  width: 100%;
+  background-color: #bbbbbb;
+  /*@include FlexCenter()*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.box4 .titre_restaurants {
+  padding-left: 20px;
+}
+
+.box4E {
+  text-decoration: none;
+  background-color: #ffffff;
+  width: 90%;
+  height: 230px;
+  margin: 10px;
+  border-radius: 20px;
+  -webkit-box-shadow: gray 5px 5px 5px;
+          box-shadow: gray 5px 5px 5px;
+  overflow: hidden;
+}
+
+.box4E figure {
+  width: 100%;
+  height: 70%;
+  padding: 0px;
+  margin: 0px;
+}
+
+.box4E figure img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.box4E figure p {
+  float: right;
+  right: 5%;
+  text-align: center;
+  background-color: #99E2D0;
+  color: #33977e;
+  border-radius: 2px;
+  -webkit-box-shadow: #252424 2px 2px 2px;
+          box-shadow: #252424 2px 2px 2px;
+  width: 80px;
+  height: 25px;
+  padding-top: 10px;
+  position: relative;
+  bottom: 170px;
+  font-size: 14px;
+}
+
+figcaption {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 20px;
+  color: black;
+  height: auto;
+}
+
+figcaption h2 {
+  font-size: 140%;
+  padding-top: 8px;
+  margin-bottom: 5px;
+  margin-top: 0px;
+}
+
+figcaption p {
+  color: #000000;
+  margin-top: 0px;
+  font-size: 19px;
+}
+
+.box4 .far {
+  float: right;
+  left: 30%;
+  width: auto;
+  height: auto;
+  color: #000;
+  position: relative;
+  bottom: 55px;
+  font-size: 24px;
+}
+
+.box4 .far:hover {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#9356dc), to(#ff7ad9));
+  background-image: linear-gradient(to top, #9356dc, #ff7ad9);
+}
+
 /*ci-desous le footer du site----------------------------*/
 footer {
   background-color: #353535;
