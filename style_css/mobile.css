@@ -39,7 +39,7 @@ header img {
 /*box1 = section localisation*/
 .box1 {
   background-color: #EAEAEA;
-  padding: 0px;
+  padding: 10px;
   margin-top: 0px;
   height: 40px;
   display: -webkit-box;
@@ -58,12 +58,17 @@ header img {
   text-align: center;
 }
 
-.box1 i {
-  color: #353535;
+.box1 .fas {
+  position: absolute;
+  right: 75%;
+  font-size: 20px;
 }
 
 .box1 p {
   color: black;
+  padding: 10px;
+  top: 0px;
+  font-size: 20px;
 }
 
 /*box2 = section explorer, contien le bouton Explorer nos restaurants*/
@@ -117,7 +122,7 @@ header img {
 /*box3 = Section fontion, contien toutes les 3 fonction du site*/
 .box3 {
   background-color: #ffffff;
-  height: 300px;
+  height: 400px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -134,29 +139,67 @@ header img {
   text-align: center;
 }
 
-.box3 .boxE {
+.box3 .box3E {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
   margin-top: 10px;
-  border-radius: 15px;
-  width: 90%;
-  height: 50px;
+  border-radius: 25px;
+  width: 80%;
+  height: 70px;
   padding: 0px;
-  -webkit-box-shadow: #aaaaaa 0px 5px 5px 0px;
-          box-shadow: #aaaaaa 0px 5px 5px 0px;
+  margin: 15px;
+  overflow: hidden;
+  -webkit-box-shadow: #e0e0e0 0px 5px 5px 0px;
+          box-shadow: #e0e0e0 0px 5px 5px 0px;
   background-color: #f7f7f7;
 }
 
-.box3 a {
+.box3E a {
   text-decoration: none;
   color: #000000;
   height: 100%;
-  padding: 20px;
+  width: 100%;
+  padding: 30px;
+  left: 30px;
   text-align: center;
+  font-size: 17px;
+}
+
+.box3E .fas {
+  position: absolute;
+  float: left;
+  right: 78%;
+  color: #808080;
+}
+
+.numero_de_liste {
+  position: absolute;
+  float: left;
+  right: 87%;
+  color: #ffffff;
+  padding: 5px;
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  background-color: #9356DC;
 }
 
 /*box4 section plats; ils contiens les differents plats*/
 .box4 {
   width: 100%;
-  background-color: #bbbbbb;
+  background-color: #F6F6F6;
   /*@include FlexCenter()*/
   display: -webkit-box;
   display: -ms-flexbox;
@@ -182,10 +225,11 @@ header img {
   background-color: #ffffff;
   width: 90%;
   height: 230px;
+  margin-top: 10px;
   margin: 10px;
   border-radius: 20px;
-  -webkit-box-shadow: gray 5px 5px 5px;
-          box-shadow: gray 5px 5px 5px;
+  -webkit-box-shadow: #e0e0e0 5px 5px 5px;
+          box-shadow: #e0e0e0 5px 5px 5px;
   overflow: hidden;
 }
 
@@ -220,7 +264,7 @@ header img {
   font-size: 14px;
 }
 
-figcaption {
+.box4E div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -236,14 +280,14 @@ figcaption {
   height: auto;
 }
 
-figcaption h2 {
+.box4E div h2 {
   font-size: 140%;
   padding-top: 8px;
   margin-bottom: 5px;
   margin-top: 0px;
 }
 
-figcaption p {
+.box4E div p {
   color: #000000;
   margin-top: 0px;
   font-size: 19px;
@@ -254,15 +298,14 @@ figcaption p {
   left: 30%;
   width: auto;
   height: auto;
-  color: #000;
+  color: #535353;
   position: relative;
   bottom: 55px;
   font-size: 24px;
 }
 
 .box4 .far:hover {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#9356dc), to(#ff7ad9));
-  background-image: linear-gradient(to top, #9356dc, #ff7ad9);
+  color: linear-gradient(to top, #9356dc, #ff7ad9);
 }
 
 /*ci-desous le footer du site----------------------------*/
@@ -275,10 +318,15 @@ footer img {
   width: 40%;
   padding: 0px;
   margin-left: 0px;
-  font-weight: 700;
 }
 
-p {
+footer p {
   color: white;
+  position: relative;
+}
+
+footer p .fas {
+  width: 10%;
+  position: relative;
 }
 /*# sourceMappingURL=mobile.css.map */

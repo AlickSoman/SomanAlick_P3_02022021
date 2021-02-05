@@ -35,17 +35,23 @@ header{
 
 .box1{
     background-color:#EAEAEA;
-    padding: 0px;
+    padding: 10px;
     margin-top: 0px;
     height: 40px;
     @include FlexCenter;
 }
     
-    .box1 i{
-        color: #353535;
+    .box1 .fas{
+        position: absolute ;
+        right: 75%;
+        font-size: 20px;
+        
     }
     .box1 p{
     color: black;
+    padding: 10px;
+    top: 0px;
+    font-size: 20px;
     }
 
 
@@ -54,7 +60,7 @@ header{
     background-color: #F6F6F6;
     height: 40vh;
     padding-top: 0px;
-        @include FlexCenter;
+    @include FlexCenter;
 }
     
     .box2 h1{
@@ -85,26 +91,51 @@ header{
 /*box3 = Section fontion, contien toutes les 3 fonction du site*/
 .box3{
     background-color: #ffffff;
-        height: 300px;
-        @include FlexCenter;
+    height: 400px;
+    @include FlexCenter;
 }
     
     
-    .box3 .boxE{
+    .box3 .box3E{
+        @include FlexCenter;
         margin-top: 10px;
-        border-radius: 15px;
-        width: 90%;
-        height: 50px;
+        border-radius: 25px;
+        width: 80%;
+        height: 70px;
         padding: 0px;
-        box-shadow: rgb(170, 170, 170) 0px 5px 5px 0px;
+        margin: 15px;
+        overflow: hidden;
+        box-shadow: rgb(224, 224, 224) 0px 5px 5px 0px;
         background-color: #f7f7f7;
     }
-    .box3 a{
+    .box3E a{
         text-decoration: none;
         color: #000000;
         height: 100%;
-        padding: 20px;
+        width: 100%;
+        padding: 30px;
+        left:30px ;
         text-align:  center;
+        font-size: 17px;
+    }
+
+    .box3E .fas{
+        position: absolute ;
+        float: left;
+        right: 78%;
+        color: #808080;
+    }
+
+    .numero_de_liste{
+        position: absolute ;
+        float: left;
+        right: 87%;
+        color: #ffffff;
+        padding: 5px;
+        width: 15px;
+        height: 15px;
+        border-radius: 100%;
+        background-color: #9356DC;
     }
 
 
@@ -112,7 +143,7 @@ header{
 .box4{
     
     width: 100%;
-    background-color: rgb(187, 187, 187);
+    background-color: #F6F6F6;
         /*@include FlexCenter()*/
 
         display: flex;
@@ -129,10 +160,10 @@ header{
     background-color: #ffffff;
     width: 90%;
     height: 230px;
-    
+    margin-top: 10px;
     margin: 10px;
     border-radius: 20px;
-    box-shadow: gray 5px 5px 5px  ;
+    box-shadow: rgb(224, 224, 224) 5px 5px 5px  ;
     overflow: hidden;
 }
     .box4E figure{
@@ -165,7 +196,7 @@ header{
             bottom: 170px;
             font-size: 14px;
         }
-figcaption{
+        .box4E div{
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
@@ -173,33 +204,33 @@ figcaption{
     color: black;
     height: auto;
     
-}
-    figcaption h2{
+        }
+        .box4E div h2{
         font-size: 140%;
         padding-top: 8px;
         margin-bottom: 5px;
         margin-top: 0px;
-    }
-    figcaption p{
+        }
+        .box4E div p{
         color: #000000;
         margin-top: 0px;
         font-size: 19px;
-    }
-    .box4 .far{
+        }
+        .box4 .far{
         
         float: right;
         left: 30%;
         width: auto;
         height: auto;
-        color: #000;
+        color: rgb(83, 83, 83);
         position: relative;
         bottom: 55px;
         font-size: 24px;
        
-    }
-    .box4 .far:hover{
-        background-image: linear-gradient(to top, rgb(147, 86, 220, ),rgb(255, 122, 217));
-    }
+        }
+         .box4 .far:hover{
+        color: linear-gradient(to top, rgb(147, 86, 220, ),rgb(255, 122, 217));
+        }
 
 
 
@@ -213,10 +244,13 @@ footer{
         width: 40%;
         padding: 0px;
         margin-left:0px ;
-        font-weight: 700;
         
-
         }
-    p{
+    footer p{
         color: rgb(255, 255, 255);
+        position: relative;
+    }
+    footer p .fas{
+        width: 10%;
+        position: relative;
     }
