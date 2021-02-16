@@ -12,15 +12,13 @@ body {
 }
 
 .animationZ {
-  top: 0px;
-  left: 0px;
   position: absolute;
-  z-index: 90;
+  z-index: 100;
   width: 100%;
-  height: 100%;
-  background-color: white;
-  animation: 3s  transitionIn;
-  -webkit-animation: 3s  transitionIn;
+  height: 378%;
+  background-color: #f1f1f1;
+  animation: 2s  transitionIn;
+  -webkit-animation: 2s  transitionIn;
   -webkit-animation-fill-mode: forwards;
 }
 
@@ -34,7 +32,7 @@ body {
     -ms-transform: rotateX(-10deg);
     -o-transform: rotateX(-10deg);
   }
-  80% {
+  77% {
     opacity: 1;
     transform: rotateX(-10deg);
     -webkit-transform: rotateX(-10deg);
@@ -61,7 +59,7 @@ body {
     -ms-transform: rotateX(-10deg);
     -o-transform: rotateX(-10deg);
   }
-  80% {
+  77% {
     opacity: 1;
     transform: rotateX(-10deg);
     -webkit-transform: rotateX(-10deg);
