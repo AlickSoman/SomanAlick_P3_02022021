@@ -183,6 +183,8 @@ padding: 20px;
 }
 
 .NomDuPlats{
+    position: relative;
+    text-overflow: ellipsis;
     font-size: 19px;
     margin: 0px 0px 0px 0px;
     padding: 0%;
@@ -192,6 +194,7 @@ padding: 20px;
 }
 
 .DetaillesDuPlats{
+    text-overflow: ellipsis;
     margin: 1px 0px 0px 0px;
     width: 60%;
     height: 20px;
@@ -233,9 +236,11 @@ padding: 20px;
 }
 
    .GenresDePlatsEnfant:hover .PrixDuPlats{
+    
     left: 0%;
     }
     .GenresDePlatsEnfant:hover .divFasIcon{
+       
          display: block;
          transition: all 2s ease-in-out;
          -webkit-transition: all 2s ease-in-out;

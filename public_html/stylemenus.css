@@ -182,6 +182,8 @@ h1 {
 }
 
 .NomDuPlats {
+  position: relative;
+  text-overflow: ellipsis;
   font-size: 19px;
   margin: 0px 0px 0px 0px;
   padding: 0%;
@@ -189,6 +191,7 @@ h1 {
 }
 
 .DetaillesDuPlats {
+  text-overflow: ellipsis;
   margin: 1px 0px 0px 0px;
   width: 60%;
   height: 20px;
