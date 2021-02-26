@@ -65,112 +65,6 @@ header a .fas {
 }
 
 /*Loader ici ----------------------------------------*/
-.animationZ {
-  position: absolute;
-  display: block;
-  background-color: white;
-  z-index: 100;
-  width: 100%;
-  height: 323%;
-  animation: transitionIn 4s;
-  -webkit-animation: transitionIn 4s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-}
-
-.animationZ .fas {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  top: 10%;
-  position: relative;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#9356dc), to(#ff7ad9));
-  background-image: linear-gradient(to top, #9356dc, #ff7ad9);
-  color: transparent;
-  background-clip: text;
-  -webkit-background-clip: text;
-}
-
-/*Animation fade in ----------------------------*/
-@-webkit-keyframes transitionIn {
-  0% {
-    opacity: 1;
-    transform: rotateX(-1deg);
-    -webkit-transform: rotateX(-1deg);
-    -moz-transform: rotateX(-1deg);
-    -ms-transform: rotateX(-1deg);
-    -o-transform: rotateX(-1deg);
-  }
-  25% {
-    opacity: 1;
-    transform: rotateX(-1deg);
-    -webkit-transform: rotateX(-1deg);
-    -moz-transform: rotateX(-1deg);
-    -ms-transform: rotateX(-1deg);
-    -o-transform: rotateX(-1deg);
-  }
-  95% {
-    opacity: 0.3;
-    transform: rotateX(0deg);
-    -webkit-transform: rotateX(0deg);
-    -moz-transform: rotateX(0deg);
-    -ms-transform: rotateX(0deg);
-    -o-transform: rotateX(0deg);
-  }
-  100% {
-    opacity: 0;
-    transform: rotateX(100deg);
-    -webkit-transform: rotateX(100deg);
-    -moz-transform: rotateX(100deg);
-    -ms-transform: rotateX(100deg);
-    -o-transform: rotateX(100deg);
-    height: 0%;
-    background-color: rgba(0, 0, 0, 0);
-  }
-}
-@keyframes transitionIn {
-  0% {
-    opacity: 1;
-    transform: rotateX(-1deg);
-    -webkit-transform: rotateX(-1deg);
-    -moz-transform: rotateX(-1deg);
-    -ms-transform: rotateX(-1deg);
-    -o-transform: rotateX(-1deg);
-  }
-  25% {
-    opacity: 1;
-    transform: rotateX(-1deg);
-    -webkit-transform: rotateX(-1deg);
-    -moz-transform: rotateX(-1deg);
-    -ms-transform: rotateX(-1deg);
-    -o-transform: rotateX(-1deg);
-  }
-  95% {
-    opacity: 0.3;
-    transform: rotateX(0deg);
-    -webkit-transform: rotateX(0deg);
-    -moz-transform: rotateX(0deg);
-    -ms-transform: rotateX(0deg);
-    -o-transform: rotateX(0deg);
-  }
-  100% {
-    opacity: 0;
-    transform: rotateX(100deg);
-    -webkit-transform: rotateX(100deg);
-    -moz-transform: rotateX(100deg);
-    -ms-transform: rotateX(100deg);
-    -o-transform: rotateX(100deg);
-    height: 0%;
-    background-color: rgba(0, 0, 0, 0);
-  }
-}
-
 /*Ici la section contenant touts les articles--------------------------------------*/
 .BoxConteneur {
   -webkit-box-shadow: rgba(0, 0, 0, 0.11) 0px 0px 0px 0px;
@@ -253,6 +147,16 @@ h1 {
 }
 
 /*conteneur des plats--------------------------*/
+.conteneurDetaillesPlats {
+  display: block;
+  position: relative;
+  bottom: 10px;
+  width: 90%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
 .GenresDePlats {
   padding: 20px;
 }
@@ -274,8 +178,8 @@ h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   position: relative;
   text-align: start;
   text-decoration: none;
@@ -294,11 +198,70 @@ h1 {
   -moz-border-radius: 15px;
   -ms-border-radius: 15px;
   -o-border-radius: 15px;
+  /*transitionX--------------------------*/
+  animation: animate 0.5s ease-in;
+  -webkit-animation: animate 0.5s ease-in;
+}
+
+@-webkit-keyframes animate {
+  0% {
+    transform: translateY(60px);
+    -webkit-transform: translateY(60px);
+    -moz-transform: translateY(60px);
+    -ms-transform: translateY(60px);
+    -o-transform: translateY(60px);
+  }
+  100% {
+    transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    -o-transform: translateY(0px);
+  }
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(60px);
+    -webkit-transform: translateY(60px);
+    -moz-transform: translateY(60px);
+    -ms-transform: translateY(60px);
+    -o-transform: translateY(60px);
+  }
+  100% {
+    transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    -o-transform: translateY(0px);
+  }
+}
+
+.GenresDePlatsEnfant:nth-child(1) {
+  -webkit-transition-delay: .1s;
+          transition-delay: .1s;
+}
+
+.GenresDePlatsEnfant:nth-child(2) {
+  -webkit-transition-delay: .2s;
+          transition-delay: .2s;
+}
+
+.GenresDePlatsEnfant:nth-child(3) {
+  -webkit-transition-delay: .3s;
+          transition-delay: .3s;
+}
+
+.GenresDePlatsEnfant:nth-child(4) {
+  -webkit-transition-delay: .4s;
+          transition-delay: .4s;
 }
 
 .NomDuPlats {
   position: relative;
   text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
   font-size: 14px;
   margin: 0px 0px 0px 0px;
   padding: 0%;
@@ -307,10 +270,12 @@ h1 {
 
 .DetaillesDuPlats {
   text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
   margin: 1px 0px 0px 0px;
-  width: 65%;
+  width: 100%;
   height: 20px;
-  font-size: 14px;
+  font-size: 12.2px;
 }
 
 /*Prix des plats-----------------------------*/
@@ -318,63 +283,108 @@ h1 {
   position: relative;
   text-align: center;
   display: block;
-  margin: 1px 0px 20px 0px;
+  margin: 0px 0px 20px 0px;
+  padding-top: 30px;
   width: 10%;
-  left: 20%;
+  top: 0%;
   font-weight: 100;
+  background-color: #ffffff;
+  width: 50%;
+  height: 100%;
 }
 
 /* class cocher pour choisir  ---------*/
 .GenresDePlatsEnfant .divFasIcon {
   background-color: #99E2D0;
-  /*display: none;
-    */
-  width: 20%;
+  /*display: none;*/
+  width: 40%;
   height: 100%;
+  display: block;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   text-align: center;
   position: absolute;
   left: 80%;
   bottom: 0%;
-  display: none;
   -webkit-transition-property: -webkit-transform;
   transition-property: -webkit-transform;
   transition-property: transform;
   transition-property: transform, -webkit-transform;
   -webkit-transition-duration: 1s;
           transition-duration: 1s;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
 }
 
 .GenresDePlatsEnfant .divFasIcon .fas {
-  top: 35%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  bottom: 90px;
+  left: 30%;
+  text-align: center;
   position: relative;
   font-size: 22px;
   color: #ffffff;
+  margin: 0%;
+  padding: 0%;
+  transition: all 0.5s ease-out;
+  transform: rotate(-360deg);
+  -webkit-transform: rotate(-360deg);
+  -moz-transform: rotate(-360deg);
+  -ms-transform: rotate(-360deg);
+  -o-transform: rotate(-360deg);
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
 }
 
-.GenresDePlatsEnfant:hover .PrixDuPlats {
-  left: 0%;
+/*Animation hover translat*/
+.GenresDePlatsEnfant:hover .conteneurDetaillesPlats {
+  width: 55%;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
 }
 
 .GenresDePlatsEnfant:hover .divFasIcon {
   display: block;
-  transition: all 2s ease-in-out;
-  -webkit-transition: all 2s ease-in-out;
-  -moz-transition: all 2s ease-in-out;
-  -ms-transition: all 2s ease-in-out;
-  -o-transition: all 2s ease-in-out;
+  left: 60%;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
 }
 
 .GenresDePlatsEnfant:hover .fas {
-  transition: all 2s ease-in-out;
+  display: block;
+  transition: all 0.5s ease-in-out;
   transform: rotate(360deg);
   -webkit-transform: rotate(360deg);
   -moz-transform: rotate(360deg);
   -ms-transform: rotate(360deg);
   -o-transform: rotate(360deg);
-  -webkit-transition: all 2s ease-in-out;
-  -moz-transition: all 2s ease-in-out;
-  -ms-transition: all 2s ease-in-out;
-  -o-transition: all 2s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
 }
 
 /* bouton commander-----------------------*/

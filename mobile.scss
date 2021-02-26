@@ -31,10 +31,9 @@ body{
     z-index: 100;
     width: 100%;
     height: 323%;
-    animation: transitionIn 3s ;
-    -webkit-animation: transitionIn 3s ;
+    animation: transitionIn 2s linear ;
+    -webkit-animation: transitionIn 2s linear ;
     animation-fill-mode: forwards;
-
 }
 
 
@@ -48,6 +47,7 @@ body{
    color: transparent;
    background-clip: text;
    -webkit-background-clip: text;
+   
 
 }
 
@@ -57,42 +57,35 @@ body{
     
     0%{
         opacity: 1;
-        transform: rotateX(-1deg);
-        -webkit-transform: rotateX(-1deg);
-        -moz-transform: rotateX(-1deg);
-        -ms-transform: rotateX(-1deg);
-        -o-transform: rotateX(-1deg);
-    }
-    25%{
-    opacity: 1;
-    transform: rotateX(-1deg);
-    -webkit-transform: rotateX(-1deg);
-    -moz-transform: rotateX(-1deg);
-    -ms-transform: rotateX(-1deg);
-    -o-transform: rotateX(-1deg);
-    }
-
-    90%{
-    opacity: 0.1;
-    transform: rotateX(0deg);
-    -webkit-transform: rotateX(0deg);
-    -moz-transform: rotateX(0deg);
-    -ms-transform: rotateX(0deg);
-    -o-transform: rotateX(0deg);
+        transform: translateY(0px);
+        -webkit-transform: translateY(0px);
+        -moz-transform: translateY(0px);
+        -ms-transform: translateY(0px);
+        -o-transform: translateY(0px);
+        background-color:rgb(255, 255, 255);
 }
 
+    80%{
+        opacity: 1;
+        transform: translateY(0px);
+        -webkit-transform: translateY(0px);
+        -moz-transform: translateY(0px);
+        -ms-transform: translateY(0px);
+        -o-transform: translateY(0px);
+        background-color:rgb(255, 255, 255);
+}
     100%{
         opacity: 0;
-        transform: rotateX(100deg);
-        -webkit-transform: rotateX(100deg);
-        -moz-transform: rotateX(100deg);
-        -ms-transform: rotateX(100deg);
-        -o-transform: rotateX(100deg);
+        transform: translateY(0px);
+        -webkit-transform: translateY(0px);
+        -moz-transform: translateY(0px);
+        -ms-transform: translateY(0px);
+        -o-transform: translateY(0px);
         height: 0%;
 }
 
- 
 }
+
 
 
 
@@ -334,6 +327,7 @@ header{
         .box4 .BoxIcone{
             left: 30%;
             position: relative;
+            bottom: 55px;
         }
         .box4 .far{
         
@@ -341,7 +335,7 @@ header{
         height: auto;
         color: rgb(83, 83, 83);
         position: relative;
-        bottom: 55px;
+        
         font-size: 24px;
        
         }
@@ -369,7 +363,7 @@ header{
             width: auto;
             height: auto;
             position: relative;
-            bottom: 55px;
+            
             font-size: 24px;
 /* ici j'ai creer un dégradé en utilisent le (-webkit-background-clip: text;)*/
             background: linear-gradient(to top, rgb(147, 86, 220, ),rgb(255, 122, 217));
