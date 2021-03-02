@@ -19,6 +19,7 @@ body{
 
 
 .bloc_page{
+    background-color: #F5F5F5;
     display: block;
    overflow: hidden;
    
@@ -166,6 +167,11 @@ header{
         box-shadow: rgb(170, 170, 170) 0px 5px 5px 0px;
         background-image: linear-gradient(to top, rgb(147, 86, 220, ),rgb(255, 122, 217));
     }
+    #bouton-explorer:hover {
+
+        background-image: linear-gradient(to top, rgba(146, 86, 220, 0.829),rgba(255, 122, 217, 0.829));
+    
+    }
 /*box3 = Section fontion, contien toutes les 3 fonction du site*/
 .box3{
     background-color: #ffffff;
@@ -275,6 +281,7 @@ header{
         height: 70%;
         padding: 0px;
         margin: 0px;
+        padding-bottom:5px ;
 
     }
 
@@ -310,7 +317,7 @@ header{
     
         }
         .box4E div h2{
-        font-size: 140%;
+        font-size: 120%;
         padding-top: 8px;
         margin-bottom: 5px;
         margin-top: 0px;
@@ -318,14 +325,14 @@ header{
         .box4E div p{
         color: #000000;
         margin-top: 0px;
-        font-size: 19px;
+        font-size: 14px;
         }
 
 
         .box4 .BoxIcone{
-            left: 30%;
+            left: 35%;
             position: relative;
-            bottom: 55px;
+            bottom: 65px;
         }
         .box4 .far{
         

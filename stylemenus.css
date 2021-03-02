@@ -65,6 +65,55 @@ header a .fas {
 }
 
 /*Loader ici ----------------------------------------*/
+.animationZ {
+  position: absolute;
+  display: block;
+  background-color: white;
+  z-index: 100;
+  width: 100%;
+  height: 400%;
+  animation: transitionIn 0.3s linear;
+  -webkit-animation: transitionIn 1.2s linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+/*Animation fade in ----------------------------*/
+@-webkit-keyframes transitionIn {
+  0% {
+    opacity: 1;
+    background-color: white;
+  }
+  80% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 0.5;
+    height: 400%;
+  }
+  100% {
+    opacity: 0;
+    height: 0;
+  }
+}
+@keyframes transitionIn {
+  0% {
+    opacity: 1;
+    background-color: white;
+  }
+  80% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 0.5;
+    height: 400%;
+  }
+  100% {
+    opacity: 0;
+    height: 0;
+  }
+}
+
 /*Ici la section contenant touts les articles--------------------------------------*/
 .BoxConteneur {
   -webkit-box-shadow: rgba(0, 0, 0, 0.11) 0px 0px 0px 0px;
@@ -101,14 +150,14 @@ header a .fas {
 
 h1 {
   font-family: 'Shrikhand';
-  font-size: 23px;
+  font-size: 130%;
   padding-left: 30px;
 }
 
 .BoxIcone {
-  position: relative;
-  top: 35%;
-  left: 25%;
+  position: absolute;
+  top: 3%;
+  left: 83%;
 }
 
 .BoxConteneur .StyleDeNouriture .far {
@@ -199,7 +248,7 @@ h1 {
   -ms-border-radius: 15px;
   -o-border-radius: 15px;
   /*transitionX--------------------------*/
-  animation: animate 0.5s ease-in;
+  animation: animate 0.8s ease-in;
   -webkit-animation: animate 1s ease-in;
 }
 
@@ -242,23 +291,28 @@ h1 {
 }
 
 .GenresDePlatsEnfant:nth-child(1) {
-  -webkit-animation-delay: 0ms;
-          animation-delay: 0ms;
+  -webkit-animation-delay: 100ms;
+          animation-delay: 100ms;
 }
 
 .GenresDePlatsEnfant:nth-child(2) {
-  -webkit-animation-delay: 250ms;
-          animation-delay: 250ms;
+  -webkit-animation-delay: 200ms;
+          animation-delay: 200ms;
 }
 
 .GenresDePlatsEnfant:nth-child(3) {
-  -webkit-animation-delay: 500ms;
-          animation-delay: 500ms;
+  -webkit-animation-delay: 300ms;
+          animation-delay: 300ms;
 }
 
 .GenresDePlatsEnfant:nth-child(4) {
-  -webkit-animation-delay: 800ms;
-          animation-delay: 800ms;
+  -webkit-animation-delay: 400ms;
+          animation-delay: 400ms;
+}
+
+.GenresDePlatsEnfant:nth-child(5) {
+  -webkit-animation-delay: 500ms;
+          animation-delay: 500ms;
 }
 
 .NomDuPlats {
@@ -267,6 +321,7 @@ h1 {
   white-space: nowrap;
   overflow: hidden;
   font-size: 14px;
+  width: 100%;
   margin: 0px 0px 0px 0px;
   padding: 0%;
   font-weight: 700;
@@ -279,7 +334,7 @@ h1 {
   margin: 1px 0px 0px 0px;
   width: 100%;
   height: 20px;
-  font-size: 12.2px;
+  font-size: 11.5px;
 }
 
 /*Prix des plats-----------------------------*/
@@ -330,7 +385,7 @@ h1 {
   display: -ms-inline-flexbox;
   display: inline-flex;
   bottom: 90px;
-  left: 30%;
+  left: 25%;
   text-align: center;
   position: relative;
   font-size: 22px;

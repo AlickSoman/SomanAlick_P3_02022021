@@ -70,10 +70,47 @@ header{
 
 
 /*Loader ici ----------------------------------------*/
+.animationZ{
+    position: absolute;
+    display: block;
+    background-color:rgb(255, 255, 255);
+    z-index: 100;
+    width: 100%;
+    height: 400%;
+    animation: transitionIn 0.3s linear ;
+    -webkit-animation: transitionIn 1.2s linear ;
+    animation-fill-mode: forwards;
+}
 
 
+/*Animation fade in ----------------------------*/
+@keyframes transitionIn{
+    
+    0%{
+        opacity: 1;
+        
+        background-color:rgb(255, 255, 255);
+}
 
+    80%{
+        opacity: 1;
+       
+     
+}
 
+90%{
+    opacity: 0.5;
+   
+    height: 400%;
+}
+
+    100%{
+        opacity: 0;
+        
+        height: 0;
+}
+
+}
 
 
 /*Ici la section contenant touts les articles--------------------------------------*/
@@ -112,15 +149,15 @@ header{
 
 h1{
     font-family: 'Shrikhand';
-    font-size: 23px;
+    font-size: 130%;
     padding-left: 30px;
 }
 
 
 .BoxIcone{
-    position: relative;
-    top: 35%;
-    left: 25%;
+    position: absolute;
+    top: 3%;
+    left: 83%;
 }
 
 .BoxConteneur .StyleDeNouriture .far{
@@ -215,7 +252,7 @@ h1{
     -moz-border-radius: 15px;
     -ms-border-radius: 15px;
     -o-border-radius: 15px;
-    /*transitionX--------------------------*/animation: animate 0.5s ease-in;
+    /*transitionX--------------------------*/animation: animate 0.8s ease-in;
     -webkit-animation: animate 1s ease-in;
 }
 
@@ -243,19 +280,23 @@ h1{
 }
 
 .GenresDePlatsEnfant:nth-child(1){
- animation-delay: 0ms;
+ animation-delay: 100ms;
      
 }
 .GenresDePlatsEnfant:nth-child(2){
-    animation-delay: 250ms;   
+    animation-delay: 200ms;   
     
 }
 .GenresDePlatsEnfant:nth-child(3){
-    animation-delay: 500ms;   
+    animation-delay: 300ms;   
        
 }
 .GenresDePlatsEnfant:nth-child(4){
-    animation-delay: 800ms;   
+    animation-delay: 400ms;   
+     
+}
+.GenresDePlatsEnfant:nth-child(5){
+    animation-delay: 500ms;   
      
 }
 
@@ -265,6 +306,7 @@ h1{
     white-space: nowrap;
     overflow: hidden;
     font-size: 14px;
+    width: 100%;
     margin: 0px 0px 0px 0px;
     padding: 0%;
     font-weight: 700;
@@ -278,7 +320,7 @@ h1{
     margin: 1px 0px 0px 0px;
     width: 100%;
     height: 20px;
-    font-size: 12.2px;
+    font-size: 11.5px;
 
 
 }
@@ -324,7 +366,7 @@ h1{
     .GenresDePlatsEnfant .divFasIcon .fas{
         display: inline-flex;
         bottom: 90px;
-        left: 30%;
+        left: 25%;
         text-align: center;
         position: relative;
         font-size: 22px;
