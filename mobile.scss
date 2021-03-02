@@ -10,6 +10,7 @@
 
 /*Body ----------------------------------------*/
 body{
+
     padding: 0%;
     margin: 0%;
     font-family: 'Roboto', sans-serif;
@@ -18,11 +19,13 @@ body{
 
 
 .bloc_page{
-   height: 100%;
-   display: block;
+    display: block;
    overflow: hidden;
-
+   
 }
+
+
+
 
 .animationZ{
     position: absolute;
@@ -30,7 +33,7 @@ body{
     background-color:rgb(255, 255, 255);
     z-index: 100;
     width: 100%;
-    height: 323%;
+    height: 400%;
     animation: transitionIn 2s linear ;
     -webkit-animation: transitionIn 2s linear ;
     animation-fill-mode: forwards;
@@ -57,31 +60,26 @@ body{
     
     0%{
         opacity: 1;
-        transform: translateY(0px);
-        -webkit-transform: translateY(0px);
-        -moz-transform: translateY(0px);
-        -ms-transform: translateY(0px);
-        -o-transform: translateY(0px);
+        
         background-color:rgb(255, 255, 255);
 }
 
     80%{
         opacity: 1;
-        transform: translateY(0px);
-        -webkit-transform: translateY(0px);
-        -moz-transform: translateY(0px);
-        -ms-transform: translateY(0px);
-        -o-transform: translateY(0px);
-        background-color:rgb(255, 255, 255);
+       
+     
 }
+
+90%{
+    opacity: 0;
+   
+    height: 400%;
+}
+
     100%{
         opacity: 0;
-        transform: translateY(0px);
-        -webkit-transform: translateY(0px);
-        -moz-transform: translateY(0px);
-        -ms-transform: translateY(0px);
-        -o-transform: translateY(0px);
-        height: 0%;
+        
+        height: 0;
 }
 
 }

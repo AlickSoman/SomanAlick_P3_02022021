@@ -69,7 +69,7 @@ header a .fas {
 .BoxConteneur {
   -webkit-box-shadow: rgba(0, 0, 0, 0.11) 0px 0px 0px 0px;
           box-shadow: rgba(0, 0, 0, 0.11) 0px 0px 0px 0px;
-  background-color: #ffffff;
+  background-color: #F5F5F5;
   position: relative;
   width: 100%;
   margin-top: 40%;
@@ -200,11 +200,12 @@ h1 {
   -o-border-radius: 15px;
   /*transitionX--------------------------*/
   animation: animate 0.5s ease-in;
-  -webkit-animation: animate 0.5s ease-in;
+  -webkit-animation: animate 1s ease-in;
 }
 
 @-webkit-keyframes animate {
   0% {
+    opacity: 0;
     transform: translateY(60px);
     -webkit-transform: translateY(60px);
     -moz-transform: translateY(60px);
@@ -212,6 +213,7 @@ h1 {
     -o-transform: translateY(60px);
   }
   100% {
+    opacity: 1;
     transform: translateY(0px);
     -webkit-transform: translateY(0px);
     -moz-transform: translateY(0px);
@@ -222,6 +224,7 @@ h1 {
 
 @keyframes animate {
   0% {
+    opacity: 0;
     transform: translateY(60px);
     -webkit-transform: translateY(60px);
     -moz-transform: translateY(60px);
@@ -229,6 +232,7 @@ h1 {
     -o-transform: translateY(60px);
   }
   100% {
+    opacity: 1;
     transform: translateY(0px);
     -webkit-transform: translateY(0px);
     -moz-transform: translateY(0px);
@@ -238,23 +242,23 @@ h1 {
 }
 
 .GenresDePlatsEnfant:nth-child(1) {
-  -webkit-transition-delay: .1s;
-          transition-delay: .1s;
+  -webkit-animation-delay: 0ms;
+          animation-delay: 0ms;
 }
 
 .GenresDePlatsEnfant:nth-child(2) {
-  -webkit-transition-delay: .2s;
-          transition-delay: .2s;
+  -webkit-animation-delay: 250ms;
+          animation-delay: 250ms;
 }
 
 .GenresDePlatsEnfant:nth-child(3) {
-  -webkit-transition-delay: .3s;
-          transition-delay: .3s;
+  -webkit-animation-delay: 500ms;
+          animation-delay: 500ms;
 }
 
 .GenresDePlatsEnfant:nth-child(4) {
-  -webkit-transition-delay: .4s;
-          transition-delay: .4s;
+  -webkit-animation-delay: 800ms;
+          animation-delay: 800ms;
 }
 
 .NomDuPlats {
@@ -388,15 +392,24 @@ h1 {
 }
 
 /* bouton commander-----------------------*/
+.bouton {
+  width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .BoxConteneur #bouton-commander {
   position: relative;
   text-decoration: none;
   color: #ffffff;
-  left: 23.9%;
   top: 10px;
   padding: 15px 50px;
   border-radius: 30px;
-  width: 55%;
+  width: auto;
   -webkit-box-shadow: rgba(0, 0, 0, 0.151) 0px 5px 5px 0px;
           box-shadow: rgba(0, 0, 0, 0.151) 0px 5px 5px 0px;
   background-image: -webkit-gradient(linear, left bottom, left top, from(#9356dc), to(#ff7ad9));
@@ -405,6 +418,12 @@ h1 {
   -moz-border-radius: 30px;
   -ms-border-radius: 30px;
   -o-border-radius: 30px;
+  overflow: hidden;
+}
+
+#bouton-commander:hover {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(146, 86, 220, 0.829)), to(rgba(255, 122, 217, 0.829)));
+  background-image: linear-gradient(to top, rgba(146, 86, 220, 0.829), rgba(255, 122, 217, 0.829));
 }
 
 /*ci-desous le footer du site----------------------------*/

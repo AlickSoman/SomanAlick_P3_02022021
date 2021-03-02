@@ -7,7 +7,6 @@ body {
 }
 
 .bloc_page {
-  height: 100%;
   display: block;
   overflow: hidden;
 }
@@ -18,7 +17,7 @@ body {
   background-color: white;
   z-index: 100;
   width: 100%;
-  height: 323%;
+  height: 400%;
   animation: transitionIn 2s linear;
   -webkit-animation: transitionIn 2s linear;
   -webkit-animation-fill-mode: forwards;
@@ -48,59 +47,35 @@ body {
 @-webkit-keyframes transitionIn {
   0% {
     opacity: 1;
-    transform: translateY(0px);
-    -webkit-transform: translateY(0px);
-    -moz-transform: translateY(0px);
-    -ms-transform: translateY(0px);
-    -o-transform: translateY(0px);
     background-color: white;
   }
   80% {
     opacity: 1;
-    transform: translateY(0px);
-    -webkit-transform: translateY(0px);
-    -moz-transform: translateY(0px);
-    -ms-transform: translateY(0px);
-    -o-transform: translateY(0px);
-    background-color: white;
+  }
+  90% {
+    opacity: 0;
+    height: 400%;
   }
   100% {
     opacity: 0;
-    transform: translateY(0px);
-    -webkit-transform: translateY(0px);
-    -moz-transform: translateY(0px);
-    -ms-transform: translateY(0px);
-    -o-transform: translateY(0px);
-    height: 0%;
+    height: 0;
   }
 }
 @keyframes transitionIn {
   0% {
     opacity: 1;
-    transform: translateY(0px);
-    -webkit-transform: translateY(0px);
-    -moz-transform: translateY(0px);
-    -ms-transform: translateY(0px);
-    -o-transform: translateY(0px);
     background-color: white;
   }
   80% {
     opacity: 1;
-    transform: translateY(0px);
-    -webkit-transform: translateY(0px);
-    -moz-transform: translateY(0px);
-    -ms-transform: translateY(0px);
-    -o-transform: translateY(0px);
-    background-color: white;
+  }
+  90% {
+    opacity: 0;
+    height: 400%;
   }
   100% {
     opacity: 0;
-    transform: translateY(0px);
-    -webkit-transform: translateY(0px);
-    -moz-transform: translateY(0px);
-    -ms-transform: translateY(0px);
-    -o-transform: translateY(0px);
-    height: 0%;
+    height: 0;
   }
 }
 
