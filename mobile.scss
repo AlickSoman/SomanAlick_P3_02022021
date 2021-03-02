@@ -393,12 +393,20 @@ footer{
         padding: 0px;
         margin-left:0px ;
         
-        }
-    footer p{
-        color: rgb(255, 255, 255);
-        position: relative;
     }
-    footer p .fas{
-        width: 10%;
-        position: relative;
-    }
+    footer a {
+            display: block;
+            margin-top: 20px;
+            text-decoration: none;
+            color: white;
+            position: relative;
+ }
+    footer a:hover{
+            text-decoration: underline;
+              
+          }
+          
+    footer a .fas {
+            width: 10%;
+            position: relative;
+          }

@@ -460,12 +460,19 @@ footer img {
   margin-left: 0px;
 }
 
-footer p {
+footer a {
+  display: block;
+  margin-top: 20px;
+  text-decoration: none;
   color: white;
   position: relative;
 }
 
-footer p .fas {
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer a .fas {
   width: 10%;
   position: relative;
 }
