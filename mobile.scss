@@ -389,7 +389,7 @@ footer{
 }
 
     footer img{
-        width: 40%;
+        width: 130px;
         padding: 0px;
         margin-left:0px ;
         
@@ -407,12 +407,90 @@ footer{
           }
           
     footer a .fas {
-            width: 10%;
+            width: 30px;
             position: relative;
           }
 
-/* ----------------------écean tablete @ media ----------------------------------*/
+/* ----------------------écean tablete @ media tabletes----------------------------------*/
 
-@media all and ( min-width : 601px ){
-    
+@media screen and ( min-width : 414.5px ){
+    .bloc_page{
+        width: 100%;
+    }
+    footer{ text-align: center; }
+    footer img{
+        width: 200px;
+        padding: 0px;
+        margin-left:0px ;
+        
+    }
+/*---------Ici les regles pour le footer en mode tablete */
     } 
+
+    @media screen and ( min-width : 1034px ){
+        .bloc_page{
+            width: 100%;
+        }
+
+        .titre_restaurants{
+            display: flex;
+            bottom: 150px;
+            left: 50px;
+        }
+
+        .box4{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            padding:0px ;
+            margin: 0px;
+            height: 400px;
+
+        }
+        .box4E{
+            text-decoration: none;
+             background-color: #ffffff;
+             width: 50%;
+             height: 230px;
+             margin-top: 10px;
+             margin: 0px;
+             border-radius: 20px;
+             box-shadow: rgb(224, 224, 224) 5px 5px 5px  ;
+             overflow: hidden;
+         }
+             .box4E figure{
+                 width: 100%;
+                 height: 70%;
+                 padding: 0px;
+                 margin: 0px;
+                 padding-bottom:5px ;
+         
+             }
+
+
+        /*---------Ici les regles pour le footer en mode tablete */
+        footer{ 
+            display: flex;
+            text-align: center; 
+            justify-content: center;
+            flex-direction: row;
+            height: 80px;
+        }
+
+        footer img{
+            position: absolute;
+            float: left;
+            margin-top:20px ;
+            width: 130px;
+            height: 20px;
+            padding: 0px;
+            margin-right:1000px ;
+            
+        }
+
+        footer a{
+            margin-left: 40px;
+
+        }
+    
+        }
