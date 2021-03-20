@@ -55,7 +55,8 @@ header{
     position: absolute;
    object-fit: contain;
     width: 100%;
-    height: 300px;
+    height: auto;
+    
 }
 
 /*ici l'image d'entete---------------------*/
@@ -63,7 +64,7 @@ header{
 .entete-img img{
   
     width: 100%;
-    height: 200px;
+    
     
     
 }
@@ -217,7 +218,11 @@ h1{
 }
 
 .GenresDePlats{
-     padding: 20px;
+   width: 88%;
+   margin: 0 6%;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
     
 }
 .TypeeDePlats{
@@ -233,6 +238,7 @@ h1{
 /* TypeeDePlatsEnfant --------------------*/
 
 .GenresDePlatsEnfant{
+    
     font-family: 'roboto';
     display: flex;
     flex-wrap: nowrap;
@@ -243,8 +249,8 @@ h1{
     margin-top: 20px;
     margin-bottom: 20px;
     padding: 20px 0px 0px 20px;
-    width: 95%;
-    height: 10%;
+    width: 96%;
+    height: 50px;
     background-color: #ffffff;
     overflow: hidden;
     box-shadow: rgba(0, 0, 0, 0.11) 2px 2px 3px 3px;
@@ -367,7 +373,7 @@ h1{
 
     .GenresDePlatsEnfant .divFasIcon .fas{
         display: inline-flex;
-        bottom: 90px;
+        bottom: 97px;
         left: 25%;
         text-align: center;
         position: relative;
@@ -460,15 +466,15 @@ h1{
 
 /*ci-desous le footer du site----------------------------*/
 footer{
-    width: 89.9%;
+  
     background-color: #353535;
     padding: 20px;
 }
 
     footer img{
-        width: 30%;
+        width: 130px;
         padding: 0px;
-        margin-left:0px ;
+        margin-left: 0px ;
         
         }
     footer a {
@@ -484,6 +490,43 @@ footer{
           }
           
     footer a .fas {
-            width: 10%;
+            width: 10;
             position: relative;
           }
+
+    
+
+@media screen and ( min-width : 400px ){
+    .NomDuPlats{
+        font-size: 17px;
+    }
+    .DetaillesDuPlats{
+        font-size: 14px;
+    }
+}
+
+@media screen and ( min-width : 768px ){
+    .TypeeDePlats{
+        width: 97%;
+    }
+}
+
+@media screen and ( min-width : 1024px ){
+    .GenresDePlats{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        .GenresDePlatsEnfant{
+            width: 300px;
+            flex-wrap: wrap;
+        }
+
+        .NomDuPlats{
+            font-size: 16px;
+        }
+        .DetaillesDuPlats{
+            font-size: 12px;
+        }
+    }
+}

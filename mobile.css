@@ -135,8 +135,9 @@ header img {
 }
 
 .box1 .fas {
-  position: absolute;
-  right: 75%;
+  position: relative;
+  float: left;
+  right: 30px;
   font-size: 20px;
 }
 
@@ -189,7 +190,7 @@ header img {
   color: #ffffff;
   padding: 15px 15px;
   border-radius: 30px;
-  width: 55%;
+  width: 200px;
   -webkit-box-shadow: #aaaaaa 0px 5px 5px 0px;
           box-shadow: #aaaaaa 0px 5px 5px 0px;
   background-image: -webkit-gradient(linear, left bottom, left top, from(#9356dc), to(#ff7ad9));
@@ -204,7 +205,12 @@ header img {
 /*box3 = Section fontion, contien toutes les 3 fonction du site*/
 .box3 {
   background-color: #ffffff;
-  height: 400px;
+  padding-bottom: 15px;
+  width: 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -214,16 +220,21 @@ header img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+      flex-direction: column;
   text-align: center;
 }
 
-.box3 h2 {
-  right: 18%;
-  position: relative;
+.titre-box3 {
+  margin-left: 2%;
+}
+
+.conteneur-title-box3 {
+  margin-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 5%;
+  height: 20px;
+  background-color: #ffffff;
 }
 
 .box3 .box3E {
@@ -243,38 +254,45 @@ header img {
   text-align: center;
   margin-top: 10px;
   border-radius: 25px;
-  width: 85%;
+  width: 300px;
   height: 70px;
   padding: 0px;
   margin: 15px;
-  overflow: hidden;
+  left: 5px;
+  /*overflow: hidden;*/
   -webkit-box-shadow: #e0e0e0 0px 5px 5px 0px;
           box-shadow: #e0e0e0 0px 5px 5px 0px;
   background-color: #f7f7f7;
+  position: relative;
 }
 
 .box3E a {
   text-decoration: none;
   color: #000000;
   height: 100%;
-  width: 100%;
+  width: 75%;
+  border-radius: 20px;
   padding: 30px;
-  left: 30px;
+  left: 10px;
   text-align: center;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 700;
+  overflow: hidden;
+  position: relative;
 }
 
-.box3E:hover a {
+.box3E:hover {
   background-color: #9256dc21;
 }
 
 .box3E #fasmobile {
   position: absolute;
-  float: left;
-  right: 80%;
+  left: 30px;
   color: #808080;
   font-size: 19px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .box3E:hover #fasmobile {
@@ -283,8 +301,7 @@ header img {
 
 .box3E #faslarge {
   position: absolute;
-  float: left;
-  right: 78%;
+  left: 30px;
   color: #808080;
   font-size: 19px;
 }
@@ -295,19 +312,24 @@ header img {
 
 .numero_de_liste {
   position: absolute;
-  float: left;
-  right: 89%;
+  left: -12px;
   color: #ffffff;
-  padding: 3px;
-  width: 15px;
-  height: 15px;
+  width: 24px;
+  height: 24px;
   border-radius: 100%;
   background-color: #9356DC;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  top: calc(50% - 12px);
+  line-height: 24px;
+  margin: 0;
 }
 
 /*box4 section plats; ils contiens les differents plats*/
 .box4 {
-  width: 100%;
+  width: 88%;
   background-color: #F6F6F6;
   /*@include FlexCenter()*/
   display: -webkit-box;
@@ -323,6 +345,11 @@ header img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin: 0 6%;
+}
+
+.title-box4 {
+  padding-left: 7%;
 }
 
 .box4 .titre_restaurants {
@@ -333,22 +360,21 @@ header img {
 .box4E {
   text-decoration: none;
   background-color: #ffffff;
-  width: 90%;
-  height: 230px;
-  margin-top: 10px;
-  margin: 10px;
+  width: 100%;
+  margin-bottom: 25px;
   border-radius: 20px;
   -webkit-box-shadow: #e0e0e0 5px 5px 5px;
           box-shadow: #e0e0e0 5px 5px 5px;
   overflow: hidden;
+  position: relative;
 }
 
 .box4E figure {
   width: 100%;
-  height: 70%;
   padding: 0px;
   margin: 0px;
   padding-bottom: 5px;
+  height: 200px;
 }
 
 .box4E figure img {
@@ -375,7 +401,7 @@ header img {
   font-size: 14px;
 }
 
-.box4E div {
+.box4E figcaption {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -391,23 +417,23 @@ header img {
   height: auto;
 }
 
-.box4E div h2 {
+.box4E figcaption h2 {
   font-size: 120%;
   padding-top: 8px;
   margin-bottom: 5px;
   margin-top: 0px;
 }
 
-.box4E div p {
+.box4E figcaption p {
   color: #000000;
   margin-top: 0px;
   font-size: 14px;
 }
 
 .box4 .BoxIcone {
-  left: 35%;
-  position: relative;
-  bottom: 65px;
+  right: 25px;
+  position: absolute;
+  bottom: 25px;
 }
 
 .box4 .far {
@@ -448,6 +474,18 @@ header img {
   -webkit-background-clip: text;
 }
 
+.box4 .far:active .fas {
+  background: -webkit-gradient(linear, left bottom, left top, from(#9356dc), to(#ff7ad9));
+  background: linear-gradient(to top, #9356dc, #ff7ad9);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.box4 a {
+  text-decoration: none;
+}
+
 /*ci-desous le footer du site----------------------------*/
 footer {
   background-color: #353535;
@@ -482,6 +520,29 @@ footer a .fas {
   .bloc_page {
     width: 100%;
   }
+  .titre-box3 {
+    margin-left: 2%;
+  }
+  .conteneur-title-box3 {
+    padding-top: 20px;
+    padding-left: 5%;
+    background-color: #ffffff;
+  }
+  .box4 .titre_restaurants {
+    left: 30px;
+    position: absolute;
+    bottom: 30px;
+  }
+  .box4 {
+    padding-top: 0px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  /*---------Ici les regles pour le footer en mode tablete */
   footer {
     text-align: center;
   }
@@ -490,12 +551,27 @@ footer a .fas {
     padding: 0px;
     margin-left: 0px;
   }
-  /*---------Ici les regles pour le footer en mode tablete */
 }
 
-@media screen and (min-width: 1034px) {
+@media screen and (min-width: 400px) {
+  .conteneur-title-box3 {
+    padding-bottom: 30px;
+    padding-left: 5%;
+    background-color: #ffffff;
+  }
+}
+
+@media screen and (min-width: 800px) {
   .bloc_page {
     width: 100%;
+  }
+  .titre-box3 {
+    margin-left: 2%;
+  }
+  .conteneur-title-box3 {
+    padding-top: 20px;
+    padding-left: 5%;
+    background-color: #ffffff;
   }
   .titre_restaurants {
     display: -webkit-box;
@@ -505,9 +581,6 @@ footer a .fas {
     left: 50px;
   }
   .box4 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -517,14 +590,17 @@ footer a .fas {
             justify-content: space-evenly;
     padding: 0px;
     margin: 0px;
-    height: 400px;
+    height: 65ch;
+    width: 100%;
   }
   .box4E {
+    position: relative;
     text-decoration: none;
     background-color: #ffffff;
-    width: 50%;
+    width: 300px;
     height: 230px;
-    margin-top: 10px;
+    margin-top: 0px;
+    margin-right: 0px;
     margin: 0px;
     border-radius: 20px;
     -webkit-box-shadow: #e0e0e0 5px 5px 5px;
@@ -538,7 +614,7 @@ footer a .fas {
     margin: 0px;
     padding-bottom: 5px;
   }
-  /*---------Ici les regles pour le footer en mode tablete */
+  /*---------Ici les regles pour le footer en mode pc */
   footer {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -556,13 +632,112 @@ footer a .fas {
   footer img {
     position: absolute;
     float: left;
-    margin-top: 20px;
+    margin-top: 0px;
     width: 130px;
     height: 20px;
     padding: 0px;
-    margin-right: 1000px;
   }
   footer a {
+    top: 30px;
+    margin-left: 40px;
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  .bloc_page {
+    width: 100%;
+  }
+  .box3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding-bottom: 40px;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .box3E a {
+    width: 75%;
+    border-radius: 20px;
+  }
+  .titre-box3 {
+    margin-left: 2%;
+  }
+  .conteneur-title-box3 {
+    padding-top: 20px;
+    padding-left: 5%;
+    background-color: #ffffff;
+  }
+  .titre_restaurants {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    bottom: 150px;
+    left: 50px;
+  }
+  .box4 {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    padding: 0px;
+    margin: 0px;
+    height: 34ch;
+    width: 100%;
+  }
+  .box4E {
+    position: relative;
+    text-decoration: none;
+    background-color: #ffffff;
+    width: 300px;
+    height: 230px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin: 0px;
+    border-radius: 20px;
+    -webkit-box-shadow: #e0e0e0 5px 5px 5px;
+            box-shadow: #e0e0e0 5px 5px 5px;
+    overflow: hidden;
+  }
+  .box4E figure {
+    width: 100%;
+    height: 70%;
+    padding: 0px;
+    margin: 0px;
+    padding-bottom: 5px;
+  }
+  /*---------Ici les regles pour le footer en mode pc */
+  footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    height: 80px;
+  }
+  footer img {
+    position: absolute;
+    float: left;
+    margin-top: 0px;
+    width: 130px;
+    height: 20px;
+    padding: 0px;
+  }
+  footer a {
+    top: 30px;
     margin-left: 40px;
   }
 }
