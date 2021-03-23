@@ -469,6 +469,7 @@ h1 {
 }
 
 .BoxConteneur #bouton-commander {
+  font-family: "roboto";
   position: relative;
   text-decoration: none;
   color: #ffffff;
@@ -510,6 +511,7 @@ footer a {
   text-decoration: none;
   color: white;
   position: relative;
+  font-family: "roboto";
 }
 
 footer a:hover {
@@ -517,7 +519,7 @@ footer a:hover {
 }
 
 footer a .fas {
-  width: 10;
+  width: 30px;
   position: relative;
 }
 
@@ -530,9 +532,42 @@ footer a .fas {
   }
 }
 
+/*---------Ici les regles pour le footer en mode pc */
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 80px;
+}
+
+footer img {
+  position: absolute;
+  float: left;
+  margin-top: 0px;
+  width: 130px;
+  height: 20px;
+  padding: 0px;
+}
+
+footer a {
+  top: 30px;
+  margin-left: 40px;
+}
+
 @media screen and (min-width: 768px) {
   .TypeeDePlats {
     width: 97%;
+  }
+  h1 {
+    padding-left: 7.5%;
   }
 }
 

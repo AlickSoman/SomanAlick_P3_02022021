@@ -64,7 +64,7 @@ header{
 .entete-img img{
   
     width: 100%;
-    
+   
     
     
 }
@@ -442,6 +442,7 @@ h1{
     justify-content: center;
 }
 .BoxConteneur #bouton-commander{
+    font-family: "roboto";
     position: relative;
     text-decoration: none;
     color: #ffffff;
@@ -483,6 +484,7 @@ footer{
             text-decoration: none;
             color: white;
             position: relative;
+            font-family: "roboto";
  }
     footer a:hover{
             text-decoration: underline;
@@ -490,7 +492,7 @@ footer{
           }
           
     footer a .fas {
-            width: 10;
+            width: 30px;
             position: relative;
           }
 
@@ -505,9 +507,35 @@ footer{
     }
 }
 
+ /*---------Ici les regles pour le footer en mode pc */
+ footer{ 
+    display: flex;
+    text-align: center; 
+    justify-content: center;
+    flex-direction: row;
+    height: 80px;
+}
+
+footer img{
+    position: absolute;
+    float: left;
+    margin-top:0px ;
+    width: 130px;
+    height: 20px;
+    padding: 0px;
+}
+
+footer a{
+    top: 30px;
+    margin-left: 40px;
+}
+
 @media screen and ( min-width : 768px ){
     .TypeeDePlats{
         width: 97%;
+    }
+    h1{
+        padding-left: 7.5%;
     }
 }
 
