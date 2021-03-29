@@ -498,45 +498,61 @@ footer{
 
     
 
-@media screen and ( min-width : 400px ){
+@media screen and ( min-width : 414.5px ){
     .NomDuPlats{
         font-size: 17px;
     }
     .DetaillesDuPlats{
         font-size: 14px;
     }
+
+
+ /*---------Ici les regles pour le footer en mode tablete */    
+ footer{ text-align: center; }
+ footer img{
+     width: 200px;
+     padding: 0px;
+     margin-left:0px ;
+     
+ }
+
+
+
 }
 
- /*---------Ici les regles pour le footer en mode pc */
- footer{ 
-    display: flex;
-    text-align: center; 
-    justify-content: center;
-    flex-direction: row;
-    height: 80px;
-}
-
-footer img{
-    position: absolute;
-    float: left;
-    margin-top:0px ;
-    width: 130px;
-    height: 20px;
-    padding: 0px;
-}
-
-footer a{
-    top: 30px;
-    margin-left: 40px;
-}
-
-@media screen and ( min-width : 768px ){
+@media screen and ( min-width : 800px ){
     .TypeeDePlats{
         width: 97%;
     }
     h1{
         padding-left: 7.5%;
     }
+
+
+    /*---------Ici les regles pour le footer en mode pc */
+    footer{ 
+        display: flex;
+        text-align: center; 
+        justify-content: center;
+        flex-direction: row;
+        height: 80px;
+    }
+
+    footer img{
+        position: absolute;
+        float: left;
+        margin-top:0px ;
+        width: 130px;
+        height: 20px;
+        padding: 0px;
+    }
+
+    footer a{
+        top: 30px;
+        margin-left: 40px;
+    }
+
+
 }
 
 @media screen and ( min-width : 1024px ){
@@ -556,5 +572,30 @@ footer a{
         .DetaillesDuPlats{
             font-size: 12px;
         }
+    }
+
+
+
+     /*---------Ici les regles pour le footer en mode pc */
+     footer{ 
+        display: flex;
+        text-align: center; 
+        justify-content: center;
+        flex-direction: row;
+        height: 80px;
+    }
+
+    footer img{
+        position: absolute;
+        float: left;
+        margin-top:0px ;
+        width: 130px;
+        height: 20px;
+        padding: 0px;
+    }
+
+    footer a{
+        top: 30px;
+        margin-left: 40px;
     }
 }
