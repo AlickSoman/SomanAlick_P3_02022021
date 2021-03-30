@@ -299,14 +299,14 @@ header img {
   color: #9356DC;
 }
 
-.box3E #faslarge {
+.box3E .faslarge {
   position: absolute;
   left: 30px;
   color: #808080;
   font-size: 19px;
 }
 
-.box3E:hover #faslarge {
+.box3E:hover .faslarge {
   color: #9356DC;
 }
 
@@ -374,17 +374,16 @@ header img {
   padding: 0px;
   margin: 0px;
   padding-bottom: 5px;
-  height: 200px;
 }
 
-.box4E figure img {
+.box4E figure div img {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
-  height: 100%;
+  height: 200px;
 }
 
-.box4E figure p {
+.box4E figure .nouveau {
   float: right;
   right: 5%;
   text-align: center;
